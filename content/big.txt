@@ -1,0 +1,11 @@
+
+const {createReadStream} = require('fs');
+
+const stream = createReadStream('./content/big.txt');
+
+stream.on('data', (result) => {
+    console.log(result);
+})
+
+// this code is not printing anything
+// watch video for code
